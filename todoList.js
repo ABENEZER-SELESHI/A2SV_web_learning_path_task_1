@@ -1,4 +1,5 @@
 const taskList = []
+const completedTaskList = []
 
 function addNewTask() {
     const input = document.getElementById('newTask')
@@ -23,6 +24,15 @@ function displayTask() {
         taskText.textContent = `${index + 1}. ${t}`;// Task content
         taskText.className = 'task-text';
 
+        // Complete button
+        const completeBtn = document.createElement('button');
+        completeBtn.textContent = 'Done';
+        completeBtn.className = 'complete-btn';
+        completeBtn.addEventListener('click', () => {
+            completedTaskList.push(t)
+            removeTask(index);
+        })
+
         // Edit button
         const editBtn = document.createElement('button');
         editBtn.textContent = 'Edit';
@@ -44,6 +54,7 @@ function displayTask() {
         });
 
         taskDiv.appendChild(taskText);
+        taskDiv.appendChild(completeBtn);
         taskDiv.appendChild(editBtn);
         taskDiv.appendChild(deleteBtn);
 

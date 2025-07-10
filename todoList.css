@@ -45,7 +45,7 @@
     flex: 1;
 }
 
-.edit-btn, .delete-btn {
+.edit-btn, .delete-btn, .complete-btn {
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
@@ -59,4 +59,8 @@
 
 .delete-btn {
     background-color: red;
+}
+
+.complete-btn {
+    background-color: green;
 }
