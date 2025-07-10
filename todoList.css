@@ -80,3 +80,7 @@ h1, h2 {
 .completed-item {
     background-color: #4a5c6a;
 }
+
+.empty {
+    color: white;
+}
