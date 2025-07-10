@@ -9,15 +9,21 @@
 <body>
     <h1 style="position: relative; justify-self: center">My Todo List</h1>
     <div class="container">
+
+        <h2>Available Tasks</h2>
+        <div id="taskListDisplay" class="taskListDisplay"></div>
+
+        <h2>Completed Tasks</h2>
+        <div id="completedTaskListDisplay" class="taskListDisplay"></div>
+        
         <div class="control">
             <input type="text" id='newTask' placeholder="Enter new task" class="new-input">
             <button onclick="addNewTask()" class="btn">Add Task</button>
         </div>
 
-        <div id="taskListDisplay" class="taskListDisplay"></div>
     </div>
 
 
-    <script src="todoList.js"></script>
+    <script async src="todoList.js"></script>
 </body>
 </html>
