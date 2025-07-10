@@ -64,3 +64,7 @@
 .complete-btn {
     background-color: green;
 }
+
+.task-item {
+    background-color: #ccc;
+}

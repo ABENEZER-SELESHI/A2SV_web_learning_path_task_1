@@ -1,6 +1,7 @@
 const taskList = []
 const completedTaskList = []
 
+
 function addNewTask() {
     const input = document.getElementById('newTask')
     const task = input.value.trim()
